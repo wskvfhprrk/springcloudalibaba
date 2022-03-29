@@ -13,7 +13,7 @@ public class Order {
     @GetMapping("createOrder")
     public String createOrder(){
         System.out.println("生成订单，并去减库存");
-        String msg = restTemplate.getForObject("http://127.0.0.1:8082/destocking", String.class) ;
+        String msg = restTemplate.getForObject("http://stock-service/destocking", String.class) ;
         return "hello world"+msg;
     }
 }

@@ -3,6 +3,7 @@ package com.hejz;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -19,6 +20,7 @@ public class OrderApplication {
      * @return
      */
     @Bean
+    @LoadBalanced //@LoadBalanced依赖负载均称衡器
     public RestTemplate restTemplate(RestTemplateBuilder builder){
         RestTemplate restTemplate = builder.build();
         return restTemplate;
