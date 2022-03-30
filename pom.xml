@@ -10,6 +10,7 @@
         <module>stock</module>
         <module>order-ribbon</module>
         <module>order-loadbalancer</module>
+        <module>order-feign</module>
     </modules>
     <name>springcloudalibaba</name>
     <description>Demo project for Spring Boot</description>
