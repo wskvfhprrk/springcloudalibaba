@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * feign日志配置
+ * 全局配置加@Configuration
+ * 局部配置不加@Configuration
  */
 @Configuration
 public class FeignConfig {
