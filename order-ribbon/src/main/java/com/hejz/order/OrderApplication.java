@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 //启动类配置ribbon轮询策略
-@RibbonClients(value = {@RibbonClient(name = "stock-service",configuration = RibbonConfig.class)})
+//@RibbonClients(value = {@RibbonClient(name = "stock-service",configuration = RibbonConfig.class)})
 public class OrderApplication {
 
     public static void main(String[] args) {
