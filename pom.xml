@@ -9,6 +9,7 @@
         <module>order</module>
         <module>stock</module>
         <module>order-ribbon</module>
+        <module>order-loadbalancer</module>
     </modules>
     <name>springcloudalibaba</name>
     <description>Demo project for Spring Boot</description>
