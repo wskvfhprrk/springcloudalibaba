@@ -8,6 +8,7 @@
     <modules>
         <module>order</module>
         <module>stock</module>
+        <module>order-ribbon</module>
     </modules>
     <name>springcloudalibaba</name>
     <description>Demo project for Spring Boot</description>
