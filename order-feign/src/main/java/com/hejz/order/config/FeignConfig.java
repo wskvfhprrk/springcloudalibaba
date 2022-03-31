@@ -2,6 +2,7 @@ package com.hejz.order.config;
 
 import feign.Logger;
 import feign.Request;
+import feign.RequestInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -22,5 +23,10 @@ public class FeignConfig {
     public Logger.Level feignLevelConfig(){
         //所有日志
         return Logger.Level.FULL;
+    }
+    //自定义拦截器
+    @Bean
+    public RequestInterceptor requestInterceptor(){
+        return new FeignAuthRequestInterceptor();
     }
 }
