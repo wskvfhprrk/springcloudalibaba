@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Configuration;
  * 局部配置不加@Configuration
  */
 //@Configuration
-//public class FeignConfig {
-//    @Bean
-//    public Logger.Level feignLevelConfig(){
-//        //所有日志
-//        return Logger.Level.FULL;
-//    }
-//}
+public class FeignConfig {
+    @Bean
+    public Logger.Level feignLevelConfig(){
+        //所有日志
+        return Logger.Level.FULL;
+    }
+}
