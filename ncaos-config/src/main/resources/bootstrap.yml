@@ -1,0 +1,11 @@
+spring:
+  application:
+    #与配置中心的data ID要保持一致
+    name: config
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+      #改变nacos原来的用户名密码，一定要添加一致的信息，否则访问不到
+      username: nacos
+      password: nacos
