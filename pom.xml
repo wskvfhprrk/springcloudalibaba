@@ -12,6 +12,7 @@
         <module>order-loadbalancer</module>
         <module>order-feign</module>
         <module>ncaos-config</module>
+        <module>sentinel</module>
     </modules>
     <name>springcloudalibaba</name>
     <description>Demo project for Spring Boot</description>

@@ -1,0 +1,9 @@
+server:
+  port: 8051
+spring:
+  cloud:
+    sentinel:
+      transport:
+        # 如若8080端口冲突，可使用 -Dserver.port=新端口 进行设置。
+        port: 8080
+        dashboard: localhost:8080
